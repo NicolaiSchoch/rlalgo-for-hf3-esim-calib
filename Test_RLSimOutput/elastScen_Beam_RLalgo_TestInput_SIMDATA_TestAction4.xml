@@ -1,0 +1,84 @@
+<Param>
+  <OutputPathAndPrefix>RL_TestSimResults/TestRL_Beam</OutputPathAndPrefix>
+  <ExtendedOutputVisualization>1</ExtendedOutputVisualization> 
+  <Mesh>
+    <Filename>SimInput/QuaderMSML_Scenario_quaderVMesh.vtk_auto_converted.vtu</Filename>
+    <BCdataFilename>SimInput/QuaderMSML_Scenario_quaderVMesh.vtk_auto_converted_BCdata_forBending.xml</BCdataFilename>
+    <dispDirBCsRelease>1</dispDirBCsRelease> 
+    <InitialRefLevel>0</InitialRefLevel>
+    <chanceOfContact>0</chanceOfContact>
+    <corotForm>0</corotForm>
+  </Mesh>
+  
+  <LinearAlgebra>
+    <Platform>CPU</Platform> 
+    <Implementation>Naive</Implementation> 
+    <MatrixFormat>CSR</MatrixFormat> 
+  </LinearAlgebra>
+  
+  <ElasticityModel> 
+    <density>1070</density>
+    <lambda>130666.0</lambda> 
+    <mu>46111.0</mu> 
+    <gravity>-4.81</gravity>
+    <calcVolumeSwitch>1</calcVolumeSwitch>
+  </ElasticityModel>
+  
+  <QuadratureOrder>2</QuadratureOrder>
+  
+  <FiniteElements>
+    <DisplacementDegree>1</DisplacementDegree>
+  </FiniteElements>
+  
+  <Instationary>
+    <SolveInstationary>1</SolveInstationary> 
+    <DampingFactor>1.0</DampingFactor> 
+    <RayleighAlpha>0.5</RayleighAlpha> 
+    <RayleighBeta>0.5</RayleighBeta> 
+    <Method>Newmark</Method> 
+    <DeltaT>0.1</DeltaT> 
+    <MaxTimeStepIts>10</MaxTimeStepIts> 
+    <VisPerXTs>5</VisPerXTs> 
+  </Instationary>
+  
+  <Boundary>
+    <DirichletMaterial1>123</DirichletMaterial1> 
+    <DirichletMaterial2>124</DirichletMaterial2> 
+    <DirichletMaterial3>125</DirichletMaterial3> 
+    <NeumannMaterial1>126</NeumannMaterial1> 
+    <NeumannMaterial1Pressure>40.0</NeumannMaterial1Pressure> 
+    <NeumannMaterial2>127</NeumannMaterial2> 
+    <NeumannMaterial2Pressure>-40.0</NeumannMaterial2Pressure>
+    <ContactMaterial1>1201</ContactMaterial1> 
+    <ContactMaterial2>1601</ContactMaterial2> 
+    <ContactPenaltyFactor>600.0</ContactPenaltyFactor> 
+    <ContactToleranceThreshold>0.05</ContactToleranceThreshold> 
+  </Boundary>
+  
+  <LinearSolver>
+    <SolverName>CG</SolverName> 
+    <MaximumIterations>2500</MaximumIterations>
+    <AbsoluteTolerance>1.e-8</AbsoluteTolerance>
+    <RelativeTolerance>1.e-20</RelativeTolerance>
+    <DivergenceLimit>1.e6</DivergenceLimit>
+    <BasisSize>1000</BasisSize>
+    <Preconditioning>1</Preconditioning> 
+    <PreconditionerName>SGAUSS_SEIDEL</PreconditionerName> 
+    <Omega>2.5</Omega>
+    <ILU_p>2.5</ILU_p>
+  </LinearSolver>
+  <ILUPP>
+    <PreprocessingType>0</PreprocessingType>
+    <PreconditionerNumber>11</PreconditionerNumber>
+    <MaxMultilevels>20</MaxMultilevels>
+    <MemFactor>0.8</MemFactor>
+    <PivotThreshold>2.75</PivotThreshold>
+    <MinPivot>0.05</MinPivot>
+  </ILUPP>
+  
+  <Backup>
+    <Restore>0</Restore>
+    <LastTimeStep>160</LastTimeStep>
+    <Filename>backup.h5</Filename>
+  </Backup>
+</Param>
