@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<VTKFile type="PUnstructuredGrid" version="0.1" byte_order="LittleEndian" compressor="vtkZLibDataCompressor">
+    <PUnstructuredGrid GhostLevel="0">
+        <PPointData>
+            <PDataArray Name="u0" type="Float64" format="ascii" />
+            <PDataArray Name="u1" type="Float64" format="ascii" />
+            <PDataArray Name="u2" type="Float64" format="ascii" />
+        </PPointData>
+        <PCellData Scalars="_sub_domain_">
+            <PDataArray Name="Material Id" type="Float64" format="ascii" />
+            <PDataArray Name="_remote_index_" type="Float64" format="ascii" />
+            <PDataArray Name="_sub_domain_" type="Float64" format="ascii" />
+        </PCellData>
+        <PPoints>
+            <PDataArray type="Float64" NumberOfComponents="3" />
+        </PPoints>
+        <Piece Source="Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_0.vtu" />
+    </PUnstructuredGrid>
+</VTKFile>

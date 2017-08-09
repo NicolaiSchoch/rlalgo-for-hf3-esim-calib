@@ -1,0 +1,10 @@
+Chosen ActionNumber in Step 1   :  3
+Produced ParameterSet in Step 1 :  [125666.0, 43111.0]
+Chosen ActionNumber in Step 2   :  3
+Produced ParameterSet in Step 2 :  [125666.0, 46111.0]
+Chosen ActionNumber in Step 3   :  3
+Produced ParameterSet in Step 3 :  [125666.0, 49111.0]
+Chosen ActionNumber in Step 4   :  1
+Produced ParameterSet in Step 4 :  [130666.0, 49111.0]
+Chosen ActionNumber in Step 5   :  0
+Produced ParameterSet in Step 5 :  [0.0, 0.0]

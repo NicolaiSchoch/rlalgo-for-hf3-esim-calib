@@ -1,0 +1,3401 @@
+
+
+
+[...]
+
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 2 is: 479.981545428.
+The RMSE in Step 2 is: 0.148152074562.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 2 for ActionNumber 4 is: 0.148152074562.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 2 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 2):
+ ===> [0.0988916728463,0.0949325314722,0.102996488229,0.0514744211602,0.148152074562]. 
+
+
+ActionSpace for Step 2 entirely computed/simulated, i.e., Q-value vector fully updated.
+
+The Q-value Vector has been analyzed, and the best Action was found to be: action_number = 3. 
+
+QvalueComputeScript successfully finished in Step 2.
+
+
+The current steps best ActionNumber is 3.
+
+
+QvalueComputeScript successfully finished.
+========================================== 
+
+Going to update component 0 (= action-number) of the Q-value-vector in Step 3.
+
+The outfilenamestring for Action 0 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction0.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction0.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 161 iterations.
+      Residual norm for solution = 8.6361e-09
+
+  Global mesh volume of current timestep 1 : 9.69725
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.05571e-09
+
+  Global mesh volume of current timestep 2 : 9.76628
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.6157e-09
+
+  Global mesh volume of current timestep 3 : 9.87725
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.78873e-09
+
+  Global mesh volume of current timestep 4 : 10.0243
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 163 iterations.
+      Residual norm for solution = 9.47229e-09
+
+  Global mesh volume of current timestep 5 : 10.3231
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 9.18535e-09
+
+  Global mesh volume of current timestep 6 : 10.6102
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 8.52415e-09
+
+  Global mesh volume of current timestep 7 : 10.9635
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.24663e-09
+
+  Global mesh volume of current timestep 8 : 11.3625
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 9.73761e-09
+
+  Global mesh volume of current timestep 9 : 11.7133
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 8.13764e-09
+
+  Global mesh volume of current timestep 10 : 12.0957
+
+
++++ Timing Report +++
+
+Setup took 0.3999 s.
+  setup_linear_algebra took 1.8e-05 s.
+  read_mesh took 0.277432 s.
+  prepare took 0.118497 s.
+  initial volume calculation took 0.003825 s.
+Complete_instationary_simulation_loop took 6.06929 s.
+  Visualization took 0.101072 s.
+  Assemble_system_instationary took 0.54055 s.
+    prepare_bc_instationary took 0.077071 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.041185 s.
+  Solve_system_instationary took 0.101892 s.
+  timestep volume calculation took 0.005804 s.
+  Assemble_system_instationary took 0.470447 s.
+    prepare_bc_instationary took 0.022166 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.2e-05 s.
+  Solve_system_instationary took 0.09808 s.
+  timestep volume calculation took 0.006029 s.
+  Assemble_system_instationary took 0.468985 s.
+    prepare_bc_instationary took 0.021647 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.9e-05 s.
+  Solve_system_instationary took 0.092244 s.
+  timestep volume calculation took 0.006031 s.
+  Assemble_system_instationary took 0.466842 s.
+    prepare_bc_instationary took 0.022695 s.
+      process_BCdataInputfile_into_BCdataStructure took 8.4e-05 s.
+  Solve_system_instationary took 0.09773 s.
+  timestep volume calculation took 0.006089 s.
+  Assemble_system_instationary took 0.467028 s.
+    prepare_bc_instationary took 0.022647 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.000112 s.
+  Solve_system_instationary took 0.089913 s.
+  timestep volume calculation took 0.006132 s.
+  Visualization took 0.104302 s.
+  Assemble_system_instationary took 0.466793 s.
+    prepare_bc_instationary took 0.020091 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.8e-05 s.
+  Solve_system_instationary took 0.092357 s.
+  timestep volume calculation took 0.0061 s.
+  Assemble_system_instationary took 0.467338 s.
+    prepare_bc_instationary took 0.021809 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.4e-05 s.
+  Solve_system_instationary took 0.092867 s.
+  timestep volume calculation took 0.006157 s.
+  Assemble_system_instationary took 0.478137 s.
+    prepare_bc_instationary took 0.023576 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.092782 s.
+  timestep volume calculation took 0.006082 s.
+  Assemble_system_instationary took 0.466846 s.
+    prepare_bc_instationary took 0.021943 s.
+      process_BCdataInputfile_into_BCdataStructure took 3e-05 s.
+  Solve_system_instationary took 0.091745 s.
+  timestep volume calculation took 0.007569 s.
+  Assemble_system_instationary took 0.4594 s.
+    prepare_bc_instationary took 0.023811 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.1e-05 s.
+  Solve_system_instationary took 0.094712 s.
+  timestep volume calculation took 0.006037 s.
+  Visualization took 0.104515 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 3 is: 57.9418034265.
+The RMSE in Step 3 is: 0.0514744211602.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 3 for ActionNumber 0 is: 0.0514744211602.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 3 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 3):
+ ===> [0.0514744211602,0.0,0.0,0.0,0.0]. 
+
+
+Going to update component 1 (= action-number) of the Q-value-vector in Step 3.
+
+The outfilenamestring for Action 1 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction1.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction1.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 162 iterations.
+      Residual norm for solution = 9.39958e-09
+
+  Global mesh volume of current timestep 1 : 9.69669
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 7.82363e-09
+
+  Global mesh volume of current timestep 2 : 9.76555
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.49581e-09
+
+  Global mesh volume of current timestep 3 : 9.87575
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.60984e-09
+
+  Global mesh volume of current timestep 4 : 10.0226
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 165 iterations.
+      Residual norm for solution = 8.90298e-09
+
+  Global mesh volume of current timestep 5 : 10.3206
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 6.74439e-09
+
+  Global mesh volume of current timestep 6 : 10.6058
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.48997e-09
+
+  Global mesh volume of current timestep 7 : 10.958
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.21814e-09
+
+  Global mesh volume of current timestep 8 : 11.3541
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.27254e-09
+
+  Global mesh volume of current timestep 9 : 11.7022
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.19982e-09
+
+  Global mesh volume of current timestep 10 : 12.0804
+
+
++++ Timing Report +++
+
+Setup took 0.379344 s.
+  setup_linear_algebra took 1.9e-05 s.
+  read_mesh took 0.266491 s.
+  prepare took 0.110447 s.
+  initial volume calculation took 0.002271 s.
+Complete_instationary_simulation_loop took 6.11907 s.
+  Visualization took 0.099562 s.
+  Assemble_system_instationary took 0.507301 s.
+    prepare_bc_instationary took 0.053629 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.034232 s.
+  Solve_system_instationary took 0.101521 s.
+  timestep volume calculation took 0.011003 s.
+  Assemble_system_instationary took 0.465953 s.
+    prepare_bc_instationary took 0.022835 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.7e-05 s.
+  Solve_system_instationary took 0.098068 s.
+  timestep volume calculation took 0.006096 s.
+  Assemble_system_instationary took 0.470488 s.
+    prepare_bc_instationary took 0.02131 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.3e-05 s.
+  Solve_system_instationary took 0.094129 s.
+  timestep volume calculation took 0.006086 s.
+  Assemble_system_instationary took 0.466433 s.
+    prepare_bc_instationary took 0.021592 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.4e-05 s.
+  Solve_system_instationary took 0.093261 s.
+  timestep volume calculation took 0.006096 s.
+  Assemble_system_instationary took 0.477726 s.
+    prepare_bc_instationary took 0.022007 s.
+      process_BCdataInputfile_into_BCdataStructure took 5.3e-05 s.
+  Solve_system_instationary took 0.095964 s.
+  timestep volume calculation took 0.00619 s.
+  Visualization took 0.143349 s.
+  Assemble_system_instationary took 0.475433 s.
+    prepare_bc_instationary took 0.019977 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.095104 s.
+  timestep volume calculation took 0.006101 s.
+  Assemble_system_instationary took 0.469165 s.
+    prepare_bc_instationary took 0.021093 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.9e-05 s.
+  Solve_system_instationary took 0.098487 s.
+  timestep volume calculation took 0.00609 s.
+  Assemble_system_instationary took 0.47421 s.
+    prepare_bc_instationary took 0.02083 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.3e-05 s.
+  Solve_system_instationary took 0.093104 s.
+  timestep volume calculation took 0.006153 s.
+  Assemble_system_instationary took 0.474568 s.
+    prepare_bc_instationary took 0.023262 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.092632 s.
+  timestep volume calculation took 0.006238 s.
+  Assemble_system_instationary took 0.464759 s.
+    prepare_bc_instationary took 0.023575 s.
+      process_BCdataInputfile_into_BCdataStructure took 7.4e-05 s.
+  Solve_system_instationary took 0.095302 s.
+  timestep volume calculation took 0.006817 s.
+  Visualization took 0.104848 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 3 is: 49.1890927964.
+The RMSE in Step 3 is: 0.0474274608071.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 3 for ActionNumber 1 is: 0.0474274608071.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 3 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 3):
+ ===> [0.0514744211602,0.0474274608071,0.0,0.0,0.0]. 
+
+
+Going to update component 2 (= action-number) of the Q-value-vector in Step 3.
+
+The outfilenamestring for Action 2 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction2.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction2.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 160 iterations.
+      Residual norm for solution = 7.77592e-09
+
+  Global mesh volume of current timestep 1 : 9.69784
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 9.15572e-09
+
+  Global mesh volume of current timestep 2 : 9.76705
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 7.4922e-09
+
+  Global mesh volume of current timestep 3 : 9.87883
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 9.73247e-09
+
+  Global mesh volume of current timestep 4 : 10.0261
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 162 iterations.
+      Residual norm for solution = 8.39856e-09
+
+  Global mesh volume of current timestep 5 : 10.3258
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 7.8993e-09
+
+  Global mesh volume of current timestep 6 : 10.6147
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 7.72467e-09
+
+  Global mesh volume of current timestep 7 : 10.9693
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 9.5543e-09
+
+  Global mesh volume of current timestep 8 : 11.3714
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 165 iterations.
+      Residual norm for solution = 8.6429e-09
+
+  Global mesh volume of current timestep 9 : 11.7248
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 7.30002e-09
+
+  Global mesh volume of current timestep 10 : 12.1117
+
+
++++ Timing Report +++
+
+Setup took 0.38755 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.274053 s.
+  prepare took 0.111347 s.
+  initial volume calculation took 0.001982 s.
+Complete_instationary_simulation_loop took 6.08981 s.
+  Visualization took 0.101188 s.
+  Assemble_system_instationary took 0.518554 s.
+    prepare_bc_instationary took 0.055423 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.035677 s.
+  Solve_system_instationary took 0.106179 s.
+  timestep volume calculation took 0.005964 s.
+  Assemble_system_instationary took 0.466813 s.
+    prepare_bc_instationary took 0.022086 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.7e-05 s.
+  Solve_system_instationary took 0.100771 s.
+  timestep volume calculation took 0.006027 s.
+  Assemble_system_instationary took 0.472588 s.
+    prepare_bc_instationary took 0.022187 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.6e-05 s.
+  Solve_system_instationary took 0.091772 s.
+  timestep volume calculation took 0.00606 s.
+  Assemble_system_instationary took 0.470756 s.
+    prepare_bc_instationary took 0.022339 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.2e-05 s.
+  Solve_system_instationary took 0.094426 s.
+  timestep volume calculation took 0.006087 s.
+  Assemble_system_instationary took 0.471156 s.
+    prepare_bc_instationary took 0.023826 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.8e-05 s.
+  Solve_system_instationary took 0.093759 s.
+  timestep volume calculation took 0.006105 s.
+  Visualization took 0.106176 s.
+  Assemble_system_instationary took 0.474717 s.
+    prepare_bc_instationary took 0.021056 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.09186 s.
+  timestep volume calculation took 0.006023 s.
+  Assemble_system_instationary took 0.46886 s.
+    prepare_bc_instationary took 0.022133 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.9e-05 s.
+  Solve_system_instationary took 0.096622 s.
+  timestep volume calculation took 0.006076 s.
+  Assemble_system_instationary took 0.479533 s.
+    prepare_bc_instationary took 0.023633 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.9e-05 s.
+  Solve_system_instationary took 0.09144 s.
+  timestep volume calculation took 0.006113 s.
+  Assemble_system_instationary took 0.473935 s.
+    prepare_bc_instationary took 0.022023 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.4e-05 s.
+  Solve_system_instationary took 0.091174 s.
+  timestep volume calculation took 0.006021 s.
+  Assemble_system_instationary took 0.460703 s.
+    prepare_bc_instationary took 0.02462 s.
+      process_BCdataInputfile_into_BCdataStructure took 8.8e-05 s.
+  Solve_system_instationary took 0.094443 s.
+  timestep volume calculation took 0.006146 s.
+  Visualization took 0.110978 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 3 is: 67.7830885226.
+The RMSE in Step 3 is: 0.0556744767598.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 3 for ActionNumber 2 is: 0.0556744767598.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 3 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 3):
+ ===> [0.0514744211602,0.0474274608071,0.0556744767598,0.0,0.0]. 
+
+
+Going to update component 3 (= action-number) of the Q-value-vector in Step 3.
+
+The outfilenamestring for Action 3 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction3.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction3.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 161 iterations.
+      Residual norm for solution = 9.39308e-09
+
+  Global mesh volume of current timestep 1 : 9.69796
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.30482e-09
+
+  Global mesh volume of current timestep 2 : 9.76666
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.03975e-09
+
+  Global mesh volume of current timestep 3 : 9.87629
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 7.47816e-09
+
+  Global mesh volume of current timestep 4 : 10.0249
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 6.39209e-09
+
+  Global mesh volume of current timestep 5 : 10.3178
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.41835e-09
+
+  Global mesh volume of current timestep 6 : 10.5923
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.3255e-09
+
+  Global mesh volume of current timestep 7 : 10.9351
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 8.39521e-09
+
+  Global mesh volume of current timestep 8 : 11.3111
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 9.16479e-09
+
+  Global mesh volume of current timestep 9 : 11.6379
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 6.94114e-09
+
+  Global mesh volume of current timestep 10 : 11.9781
+
+
++++ Timing Report +++
+
+Setup took 0.380447 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.267876 s.
+  prepare took 0.111055 s.
+  initial volume calculation took 0.001441 s.
+Complete_instationary_simulation_loop took 6.18081 s.
+  Visualization took 0.100305 s.
+  Assemble_system_instationary took 0.508369 s.
+    prepare_bc_instationary took 0.054242 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.034764 s.
+  Solve_system_instationary took 0.099877 s.
+  timestep volume calculation took 0.008803 s.
+  Assemble_system_instationary took 0.465591 s.
+    prepare_bc_instationary took 0.022255 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.096941 s.
+  timestep volume calculation took 0.006006 s.
+  Assemble_system_instationary took 0.46966 s.
+    prepare_bc_instationary took 0.020603 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.093066 s.
+  timestep volume calculation took 0.006097 s.
+  Assemble_system_instationary took 0.46649 s.
+    prepare_bc_instationary took 0.020793 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.1e-05 s.
+  Solve_system_instationary took 0.093566 s.
+  timestep volume calculation took 0.006016 s.
+  Assemble_system_instationary took 0.464925 s.
+    prepare_bc_instationary took 0.021265 s.
+      process_BCdataInputfile_into_BCdataStructure took 2e-05 s.
+  Solve_system_instationary took 0.094194 s.
+  timestep volume calculation took 0.006082 s.
+  Visualization took 0.2392 s.
+  Assemble_system_instationary took 0.470916 s.
+    prepare_bc_instationary took 0.021794 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.095733 s.
+  timestep volume calculation took 0.006053 s.
+  Assemble_system_instationary took 0.46915 s.
+    prepare_bc_instationary took 0.02056 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.093056 s.
+  timestep volume calculation took 0.006002 s.
+  Assemble_system_instationary took 0.473481 s.
+    prepare_bc_instationary took 0.020672 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.093133 s.
+  timestep volume calculation took 0.005964 s.
+  Assemble_system_instationary took 0.472364 s.
+    prepare_bc_instationary took 0.020521 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.09916 s.
+  timestep volume calculation took 0.005958 s.
+  Assemble_system_instationary took 0.461466 s.
+    prepare_bc_instationary took 0.020838 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.094685 s.
+  timestep volume calculation took 0.005981 s.
+  Visualization took 0.101944 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 3 is: 1.0000838285.
+The RMSE in Step 3 is: 0.00676259952644.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 3 for ActionNumber 3 is: 0.00676259952644.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 3 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 3):
+ ===> [0.0514744211602,0.0474274608071,0.0556744767598,0.00676259952644,0.0]. 
+
+
+Going to update component 4 (= action-number) of the Q-value-vector in Step 3.
+
+The outfilenamestring for Action 4 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction4.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction4.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 161 iterations.
+      Residual norm for solution = 7.24061e-09
+
+  Global mesh volume of current timestep 1 : 9.69648
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.76605e-09
+
+  Global mesh volume of current timestep 2 : 9.76583
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 7.29346e-09
+
+  Global mesh volume of current timestep 3 : 9.8784
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.43356e-09
+
+  Global mesh volume of current timestep 4 : 10.0236
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 163 iterations.
+      Residual norm for solution = 8.01859e-09
+
+  Global mesh volume of current timestep 5 : 10.328
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.54674e-09
+
+  Global mesh volume of current timestep 6 : 10.6288
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.89861e-09
+
+  Global mesh volume of current timestep 7 : 10.9933
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.18174e-09
+
+  Global mesh volume of current timestep 8 : 11.4167
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 164 iterations.
+      Residual norm for solution = 9.40214e-09
+
+  Global mesh volume of current timestep 9 : 11.7922
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.64767e-09
+
+  Global mesh volume of current timestep 10 : 12.217
+
+
++++ Timing Report +++
+
+Setup took 0.392247 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.2746 s.
+  prepare took 0.114465 s.
+  initial volume calculation took 0.002943 s.
+Complete_instationary_simulation_loop took 6.12183 s.
+  Visualization took 0.103179 s.
+  Assemble_system_instationary took 0.517927 s.
+    prepare_bc_instationary took 0.05621 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.035716 s.
+  Solve_system_instationary took 0.106934 s.
+  timestep volume calculation took 0.005749 s.
+  Assemble_system_instationary took 0.478516 s.
+    prepare_bc_instationary took 0.020844 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.7e-05 s.
+  Solve_system_instationary took 0.091508 s.
+  timestep volume calculation took 0.005926 s.
+  Assemble_system_instationary took 0.476066 s.
+    prepare_bc_instationary took 0.021465 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.092273 s.
+  timestep volume calculation took 0.005992 s.
+  Assemble_system_instationary took 0.472271 s.
+    prepare_bc_instationary took 0.020682 s.
+      process_BCdataInputfile_into_BCdataStructure took 3e-05 s.
+  Solve_system_instationary took 0.100484 s.
+  timestep volume calculation took 0.00605 s.
+  Assemble_system_instationary took 0.476624 s.
+    prepare_bc_instationary took 0.020843 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.089524 s.
+  timestep volume calculation took 0.005987 s.
+  Visualization took 0.125496 s.
+  Assemble_system_instationary took 0.471525 s.
+    prepare_bc_instationary took 0.020609 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.091681 s.
+  timestep volume calculation took 0.005947 s.
+  Assemble_system_instationary took 0.486978 s.
+    prepare_bc_instationary took 0.02066 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.094851 s.
+  timestep volume calculation took 0.006018 s.
+  Assemble_system_instationary took 0.473419 s.
+    prepare_bc_instationary took 0.020653 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.091555 s.
+  timestep volume calculation took 0.005939 s.
+  Assemble_system_instationary took 0.467996 s.
+    prepare_bc_instationary took 0.020431 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.095361 s.
+  timestep volume calculation took 0.00595 s.
+  Assemble_system_instationary took 0.459057 s.
+    prepare_bc_instationary took 0.020798 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.09163 s.
+  timestep volume calculation took 0.006045 s.
+  Visualization took 0.106629 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 3 is: 213.859482773.
+The RMSE in Step 3 is: 0.0988916728463.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 3 for ActionNumber 4 is: 0.0988916728463.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 3 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 3):
+ ===> [0.0514744211602,0.0474274608071,0.0556744767598,0.00676259952644,0.0988916728463]. 
+
+
+ActionSpace for Step 3 entirely computed/simulated, i.e., Q-value vector fully updated.
+
+The Q-value Vector has been analyzed, and the best Action was found to be: action_number = 3. 
+
+QvalueComputeScript successfully finished in Step 3.
+
+
+The current steps best ActionNumber is 3.
+
+
+QvalueComputeScript successfully finished.
+========================================== 
+
+Going to update component 0 (= action-number) of the Q-value-vector in Step 4.
+
+The outfilenamestring for Action 0 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction0.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction0.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 161 iterations.
+      Residual norm for solution = 9.39308e-09
+
+  Global mesh volume of current timestep 1 : 9.69796
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.30482e-09
+
+  Global mesh volume of current timestep 2 : 9.76666
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.03975e-09
+
+  Global mesh volume of current timestep 3 : 9.87629
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 7.47816e-09
+
+  Global mesh volume of current timestep 4 : 10.0249
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 6.39209e-09
+
+  Global mesh volume of current timestep 5 : 10.3178
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.41835e-09
+
+  Global mesh volume of current timestep 6 : 10.5923
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.3255e-09
+
+  Global mesh volume of current timestep 7 : 10.9351
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 8.39521e-09
+
+  Global mesh volume of current timestep 8 : 11.3111
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 9.16479e-09
+
+  Global mesh volume of current timestep 9 : 11.6379
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 6.94114e-09
+
+  Global mesh volume of current timestep 10 : 11.9781
+
+
++++ Timing Report +++
+
+Setup took 0.383544 s.
+  setup_linear_algebra took 1.2e-05 s.
+  read_mesh took 0.266675 s.
+  prepare took 0.114327 s.
+  initial volume calculation took 0.002453 s.
+Complete_instationary_simulation_loop took 6.37938 s.
+  Visualization took 0.103308 s.
+  Assemble_system_instationary took 0.508586 s.
+    prepare_bc_instationary took 0.054145 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.034569 s.
+  Solve_system_instationary took 0.104893 s.
+  timestep volume calculation took 0.005879 s.
+  Assemble_system_instationary took 0.466329 s.
+    prepare_bc_instationary took 0.020849 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.1e-05 s.
+  Solve_system_instationary took 0.09397 s.
+  timestep volume calculation took 0.005921 s.
+  Assemble_system_instationary took 0.498608 s.
+    prepare_bc_instationary took 0.020121 s.
+      process_BCdataInputfile_into_BCdataStructure took 1e-05 s.
+  Solve_system_instationary took 0.119625 s.
+  timestep volume calculation took 0.006386 s.
+  Assemble_system_instationary took 0.546953 s.
+    prepare_bc_instationary took 0.027386 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.8e-05 s.
+  Solve_system_instationary took 0.094458 s.
+  timestep volume calculation took 0.006206 s.
+  Assemble_system_instationary took 0.532991 s.
+    prepare_bc_instationary took 0.022175 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.11016 s.
+  timestep volume calculation took 0.00804 s.
+  Visualization took 0.104856 s.
+  Assemble_system_instationary took 0.49242 s.
+    prepare_bc_instationary took 0.025631 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.105812 s.
+  timestep volume calculation took 0.006145 s.
+  Assemble_system_instationary took 0.496982 s.
+    prepare_bc_instationary took 0.022507 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.094822 s.
+  timestep volume calculation took 0.006235 s.
+  Assemble_system_instationary took 0.484999 s.
+    prepare_bc_instationary took 0.021837 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.093894 s.
+  timestep volume calculation took 0.00614 s.
+  Assemble_system_instationary took 0.501909 s.
+    prepare_bc_instationary took 0.021857 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.096877 s.
+  timestep volume calculation took 0.006196 s.
+  Assemble_system_instationary took 0.464593 s.
+    prepare_bc_instationary took 0.022584 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.1e-05 s.
+  Solve_system_instationary took 0.094075 s.
+  timestep volume calculation took 0.006071 s.
+  Visualization took 0.104348 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 4 is: 1.0000838285.
+The RMSE in Step 4 is: 0.00676259952644.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 4 for ActionNumber 0 is: 0.00676259952644.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 4 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 4):
+ ===> [0.00676259952644,0.0,0.0,0.0,0.0]. 
+
+
+Going to update component 1 (= action-number) of the Q-value-vector in Step 4.
+
+The outfilenamestring for Action 1 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction1.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction1.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 162 iterations.
+      Residual norm for solution = 9.69849e-09
+
+  Global mesh volume of current timestep 1 : 9.6974
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.77834e-09
+
+  Global mesh volume of current timestep 2 : 9.76592
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 9.79636e-09
+
+  Global mesh volume of current timestep 3 : 9.87479
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 8.38552e-09
+
+  Global mesh volume of current timestep 4 : 10.0232
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 6.96696e-09
+
+  Global mesh volume of current timestep 5 : 10.3151
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.80726e-09
+
+  Global mesh volume of current timestep 6 : 10.5879
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 9.23226e-09
+
+  Global mesh volume of current timestep 7 : 10.9296
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.90163e-09
+
+  Global mesh volume of current timestep 8 : 11.3026
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.04812e-09
+
+  Global mesh volume of current timestep 9 : 11.6267
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 7.82601e-09
+
+  Global mesh volume of current timestep 10 : 11.9626
+
+
++++ Timing Report +++
+
+Setup took 0.378516 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.264285 s.
+  prepare took 0.112726 s.
+  initial volume calculation took 0.001432 s.
+Complete_instationary_simulation_loop took 6.46233 s.
+  Visualization took 0.098274 s.
+  Assemble_system_instationary took 0.519981 s.
+    prepare_bc_instationary took 0.062485 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.040035 s.
+  Solve_system_instationary took 0.104433 s.
+  timestep volume calculation took 0.007975 s.
+  Assemble_system_instationary took 0.476758 s.
+    prepare_bc_instationary took 0.022524 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.093961 s.
+  timestep volume calculation took 0.005972 s.
+  Assemble_system_instationary took 0.501931 s.
+    prepare_bc_instationary took 0.022806 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.6e-05 s.
+  Solve_system_instationary took 0.094417 s.
+  timestep volume calculation took 0.008683 s.
+  Assemble_system_instationary took 0.49997 s.
+    prepare_bc_instationary took 0.023062 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.7e-05 s.
+  Solve_system_instationary took 0.098352 s.
+  timestep volume calculation took 0.006325 s.
+  Assemble_system_instationary took 0.51505 s.
+    prepare_bc_instationary took 0.026894 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.097094 s.
+  timestep volume calculation took 0.00721 s.
+  Visualization took 0.11569 s.
+  Assemble_system_instationary took 0.533777 s.
+    prepare_bc_instationary took 0.024194 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.7e-05 s.
+  Solve_system_instationary took 0.113736 s.
+  timestep volume calculation took 0.00737 s.
+  Assemble_system_instationary took 0.494677 s.
+    prepare_bc_instationary took 0.022344 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.117642 s.
+  timestep volume calculation took 0.006204 s.
+  Assemble_system_instationary took 0.527773 s.
+    prepare_bc_instationary took 0.026654 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.115556 s.
+  timestep volume calculation took 0.006217 s.
+  Assemble_system_instationary took 0.477365 s.
+    prepare_bc_instationary took 0.022761 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.09722 s.
+  timestep volume calculation took 0.00607 s.
+  Assemble_system_instationary took 0.486057 s.
+    prepare_bc_instationary took 0.022534 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.106906 s.
+  timestep volume calculation took 0.006215 s.
+  Visualization took 0.106536 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 4 is: 0.384619630564.
+The RMSE in Step 4 is: 0.00419383355889.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 4 for ActionNumber 1 is: 0.00419383355889.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 4 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 4):
+ ===> [0.00676259952644,0.00419383355889,0.0,0.0,0.0]. 
+
+
+Going to update component 2 (= action-number) of the Q-value-vector in Step 4.
+
+The outfilenamestring for Action 2 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction2.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction2.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 160 iterations.
+      Residual norm for solution = 8.85708e-09
+
+  Global mesh volume of current timestep 1 : 9.69856
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.51829e-09
+
+  Global mesh volume of current timestep 2 : 9.76745
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 9.30384e-09
+
+  Global mesh volume of current timestep 3 : 9.87788
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 9.60403e-09
+
+  Global mesh volume of current timestep 4 : 10.0267
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 9.01958e-09
+
+  Global mesh volume of current timestep 5 : 10.3205
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.77936e-09
+
+  Global mesh volume of current timestep 6 : 10.5969
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 9.9283e-09
+
+  Global mesh volume of current timestep 7 : 10.9409
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 7.78424e-09
+
+  Global mesh volume of current timestep 8 : 11.32
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 8.51764e-09
+
+  Global mesh volume of current timestep 9 : 11.6495
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.92876e-09
+
+  Global mesh volume of current timestep 10 : 11.9943
+
+
++++ Timing Report +++
+
+Setup took 0.379362 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.264874 s.
+  prepare took 0.112964 s.
+  initial volume calculation took 0.001433 s.
+Complete_instationary_simulation_loop took 6.09573 s.
+  Visualization took 0.099716 s.
+  Assemble_system_instationary took 0.505441 s.
+    prepare_bc_instationary took 0.056531 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.036193 s.
+  Solve_system_instationary took 0.098228 s.
+  timestep volume calculation took 0.007917 s.
+  Assemble_system_instationary took 0.47082 s.
+    prepare_bc_instationary took 0.026124 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.091986 s.
+  timestep volume calculation took 0.005955 s.
+  Assemble_system_instationary took 0.454259 s.
+    prepare_bc_instationary took 0.021126 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.09882 s.
+  timestep volume calculation took 0.006009 s.
+  Assemble_system_instationary took 0.458708 s.
+    prepare_bc_instationary took 0.021152 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.093487 s.
+  timestep volume calculation took 0.006068 s.
+  Assemble_system_instationary took 0.467371 s.
+    prepare_bc_instationary took 0.021084 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.091561 s.
+  timestep volume calculation took 0.006122 s.
+  Visualization took 0.1034 s.
+  Assemble_system_instationary took 0.454844 s.
+    prepare_bc_instationary took 0.019379 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.095745 s.
+  timestep volume calculation took 0.006011 s.
+  Assemble_system_instationary took 0.463053 s.
+    prepare_bc_instationary took 0.021175 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.09202 s.
+  timestep volume calculation took 0.006004 s.
+  Assemble_system_instationary took 0.46286 s.
+    prepare_bc_instationary took 0.021213 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.8e-05 s.
+  Solve_system_instationary took 0.091894 s.
+  timestep volume calculation took 0.006766 s.
+  Assemble_system_instationary took 0.459432 s.
+    prepare_bc_instationary took 0.021469 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.093258 s.
+  timestep volume calculation took 0.006733 s.
+  Assemble_system_instationary took 0.452384 s.
+    prepare_bc_instationary took 0.02139 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.097585 s.
+  timestep volume calculation took 0.006057 s.
+  Visualization took 0.234551 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 4 is: 2.44086709612.
+The RMSE in Step 4 is: 0.0105649521367.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 4 for ActionNumber 2 is: 0.0105649521367.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 4 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 4):
+ ===> [0.00676259952644,0.00419383355889,0.0105649521367,0.0,0.0]. 
+
+
+Going to update component 3 (= action-number) of the Q-value-vector in Step 4.
+
+The outfilenamestring for Action 3 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction3.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction3.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.27468e-09
+
+  Global mesh volume of current timestep 1 : 9.69863
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.46831e-09
+
+  Global mesh volume of current timestep 2 : 9.767
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 173 iterations.
+      Residual norm for solution = 9.2434e-09
+
+  Global mesh volume of current timestep 3 : 9.87549
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 7.4584e-09
+
+  Global mesh volume of current timestep 4 : 10.0253
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 8.04176e-09
+
+  Global mesh volume of current timestep 5 : 10.312
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 174 iterations.
+      Residual norm for solution = 7.5033e-09
+
+  Global mesh volume of current timestep 6 : 10.5752
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 174 iterations.
+      Residual norm for solution = 7.0744e-09
+
+  Global mesh volume of current timestep 7 : 10.9078
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.74614e-09
+
+  Global mesh volume of current timestep 8 : 11.2621
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.43971e-09
+
+  Global mesh volume of current timestep 9 : 11.5654
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.36883e-09
+
+  Global mesh volume of current timestep 10 : 11.8648
+
+
++++ Timing Report +++
+
+Setup took 0.380037 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.267173 s.
+  prepare took 0.111344 s.
+  initial volume calculation took 0.001448 s.
+Complete_instationary_simulation_loop took 6.45015 s.
+  Visualization took 0.100667 s.
+  Assemble_system_instationary took 0.523753 s.
+    prepare_bc_instationary took 0.054798 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.034953 s.
+  Solve_system_instationary took 0.133215 s.
+  timestep volume calculation took 0.00598 s.
+  Assemble_system_instationary took 0.47473 s.
+    prepare_bc_instationary took 0.023121 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.000108 s.
+  Solve_system_instationary took 0.094668 s.
+  timestep volume calculation took 0.006151 s.
+  Assemble_system_instationary took 0.478771 s.
+    prepare_bc_instationary took 0.023512 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.9e-05 s.
+  Solve_system_instationary took 0.09608 s.
+  timestep volume calculation took 0.006512 s.
+  Assemble_system_instationary took 0.466854 s.
+    prepare_bc_instationary took 0.02246 s.
+      process_BCdataInputfile_into_BCdataStructure took 7.5e-05 s.
+  Solve_system_instationary took 0.093688 s.
+  timestep volume calculation took 0.006204 s.
+  Assemble_system_instationary took 0.479578 s.
+    prepare_bc_instationary took 0.02359 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.097607 s.
+  timestep volume calculation took 0.006204 s.
+  Visualization took 0.326462 s.
+  Assemble_system_instationary took 0.469912 s.
+    prepare_bc_instationary took 0.019468 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.113276 s.
+  timestep volume calculation took 0.007494 s.
+  Assemble_system_instationary took 0.4895 s.
+    prepare_bc_instationary took 0.02608 s.
+      process_BCdataInputfile_into_BCdataStructure took 7.2e-05 s.
+  Solve_system_instationary took 0.101656 s.
+  timestep volume calculation took 0.006256 s.
+  Assemble_system_instationary took 0.512866 s.
+    prepare_bc_instationary took 0.022136 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.09947 s.
+  timestep volume calculation took 0.006154 s.
+  Assemble_system_instationary took 0.469384 s.
+    prepare_bc_instationary took 0.022004 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.101503 s.
+  timestep volume calculation took 0.006666 s.
+  Assemble_system_instationary took 0.460318 s.
+    prepare_bc_instationary took 0.022869 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.098558 s.
+  timestep volume calculation took 0.006147 s.
+  Visualization took 0.103 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 4 is: 33.05514037.
+The RMSE in Step 4 is: 0.0388789896405.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 4 for ActionNumber 3 is: 0.0388789896405.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 4 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 4):
+ ===> [0.00676259952644,0.00419383355889,0.0105649521367,0.0388789896405,0.0]. 
+
+
+Going to update component 4 (= action-number) of the Q-value-vector in Step 4.
+
+The outfilenamestring for Action 4 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction4.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction4.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 161 iterations.
+      Residual norm for solution = 8.6361e-09
+
+  Global mesh volume of current timestep 1 : 9.69725
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.05571e-09
+
+  Global mesh volume of current timestep 2 : 9.76628
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.6157e-09
+
+  Global mesh volume of current timestep 3 : 9.87725
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.78873e-09
+
+  Global mesh volume of current timestep 4 : 10.0243
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 163 iterations.
+      Residual norm for solution = 9.47229e-09
+
+  Global mesh volume of current timestep 5 : 10.3231
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 9.18535e-09
+
+  Global mesh volume of current timestep 6 : 10.6102
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 8.52415e-09
+
+  Global mesh volume of current timestep 7 : 10.9635
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.24663e-09
+
+  Global mesh volume of current timestep 8 : 11.3625
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 166 iterations.
+      Residual norm for solution = 9.73761e-09
+
+  Global mesh volume of current timestep 9 : 11.7133
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 8.13764e-09
+
+  Global mesh volume of current timestep 10 : 12.0957
+
+
++++ Timing Report +++
+
+Setup took 0.3954 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.27541 s.
+  prepare took 0.116747 s.
+  initial volume calculation took 0.003176 s.
+Complete_instationary_simulation_loop took 6.11388 s.
+  Visualization took 0.10378 s.
+  Assemble_system_instationary took 0.538344 s.
+    prepare_bc_instationary took 0.061078 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.038284 s.
+  Solve_system_instationary took 0.103201 s.
+  timestep volume calculation took 0.00598 s.
+  Assemble_system_instationary took 0.472626 s.
+    prepare_bc_instationary took 0.022339 s.
+      process_BCdataInputfile_into_BCdataStructure took 9.1e-05 s.
+  Solve_system_instationary took 0.094794 s.
+  timestep volume calculation took 0.006115 s.
+  Assemble_system_instationary took 0.465876 s.
+    prepare_bc_instationary took 0.021142 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.2e-05 s.
+  Solve_system_instationary took 0.093737 s.
+  timestep volume calculation took 0.006644 s.
+  Assemble_system_instationary took 0.467558 s.
+    prepare_bc_instationary took 0.020682 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.7e-05 s.
+  Solve_system_instationary took 0.096152 s.
+  timestep volume calculation took 0.006039 s.
+  Assemble_system_instationary took 0.472267 s.
+    prepare_bc_instationary took 0.020591 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.9e-05 s.
+  Solve_system_instationary took 0.089668 s.
+  timestep volume calculation took 0.005991 s.
+  Visualization took 0.108707 s.
+  Assemble_system_instationary took 0.468569 s.
+    prepare_bc_instationary took 0.021145 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.7e-05 s.
+  Solve_system_instationary took 0.099534 s.
+  timestep volume calculation took 0.006059 s.
+  Assemble_system_instationary took 0.471137 s.
+    prepare_bc_instationary took 0.021306 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.6e-05 s.
+  Solve_system_instationary took 0.094532 s.
+  timestep volume calculation took 0.00614 s.
+  Assemble_system_instationary took 0.482225 s.
+    prepare_bc_instationary took 0.021243 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.1e-05 s.
+  Solve_system_instationary took 0.092914 s.
+  timestep volume calculation took 0.005988 s.
+  Assemble_system_instationary took 0.468686 s.
+    prepare_bc_instationary took 0.022398 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.5e-05 s.
+  Solve_system_instationary took 0.098912 s.
+  timestep volume calculation took 0.00594 s.
+  Assemble_system_instationary took 0.468047 s.
+    prepare_bc_instationary took 0.021094 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.8e-05 s.
+  Solve_system_instationary took 0.092605 s.
+  timestep volume calculation took 0.005998 s.
+  Visualization took 0.108515 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 4 is: 57.9418034265.
+The RMSE in Step 4 is: 0.0514744211602.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 4 for ActionNumber 4 is: 0.0514744211602.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 4 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 4):
+ ===> [0.00676259952644,0.00419383355889,0.0105649521367,0.0388789896405,0.0514744211602]. 
+
+
+ActionSpace for Step 4 entirely computed/simulated, i.e., Q-value vector fully updated.
+
+The Q-value Vector has been analyzed, and the best Action was found to be: action_number = 1. 
+
+QvalueComputeScript successfully finished in Step 4.
+
+
+The current steps best ActionNumber is 1.
+
+
+QvalueComputeScript successfully finished.
+========================================== 
+
+Going to update component 0 (= action-number) of the Q-value-vector in Step 5.
+
+The outfilenamestring for Action 0 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction0.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction0.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 162 iterations.
+      Residual norm for solution = 9.69849e-09
+
+  Global mesh volume of current timestep 1 : 9.6974
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.77834e-09
+
+  Global mesh volume of current timestep 2 : 9.76592
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 9.79636e-09
+
+  Global mesh volume of current timestep 3 : 9.87479
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 8.38552e-09
+
+  Global mesh volume of current timestep 4 : 10.0232
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 6.96696e-09
+
+  Global mesh volume of current timestep 5 : 10.3151
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.80726e-09
+
+  Global mesh volume of current timestep 6 : 10.5879
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 9.23226e-09
+
+  Global mesh volume of current timestep 7 : 10.9296
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.90163e-09
+
+  Global mesh volume of current timestep 8 : 11.3026
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 8.04812e-09
+
+  Global mesh volume of current timestep 9 : 11.6267
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 7.82601e-09
+
+  Global mesh volume of current timestep 10 : 11.9626
+
+
++++ Timing Report +++
+
+Setup took 0.395148 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.273436 s.
+  prepare took 0.117107 s.
+  initial volume calculation took 0.0044 s.
+Complete_instationary_simulation_loop took 6.11089 s.
+  Visualization took 0.10282 s.
+  Assemble_system_instationary took 0.542638 s.
+    prepare_bc_instationary took 0.058004 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.037998 s.
+  Solve_system_instationary took 0.110472 s.
+  timestep volume calculation took 0.005843 s.
+  Assemble_system_instationary took 0.497781 s.
+    prepare_bc_instationary took 0.022304 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.095129 s.
+  timestep volume calculation took 0.007391 s.
+  Assemble_system_instationary took 0.468926 s.
+    prepare_bc_instationary took 0.022337 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.095347 s.
+  timestep volume calculation took 0.006126 s.
+  Assemble_system_instationary took 0.474976 s.
+    prepare_bc_instationary took 0.02223 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.1e-05 s.
+  Solve_system_instationary took 0.096558 s.
+  timestep volume calculation took 0.006223 s.
+  Assemble_system_instationary took 0.466909 s.
+    prepare_bc_instationary took 0.022175 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.093384 s.
+  timestep volume calculation took 0.006263 s.
+  Visualization took 0.104382 s.
+  Assemble_system_instationary took 0.464132 s.
+    prepare_bc_instationary took 0.019887 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.096655 s.
+  timestep volume calculation took 0.006066 s.
+  Assemble_system_instationary took 0.464099 s.
+    prepare_bc_instationary took 0.022161 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.3e-05 s.
+  Solve_system_instationary took 0.093259 s.
+  timestep volume calculation took 0.006056 s.
+  Assemble_system_instationary took 0.46846 s.
+    prepare_bc_instationary took 0.022389 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.093082 s.
+  timestep volume calculation took 0.006052 s.
+  Assemble_system_instationary took 0.464669 s.
+    prepare_bc_instationary took 0.021943 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.7e-05 s.
+  Solve_system_instationary took 0.099656 s.
+  timestep volume calculation took 0.006149 s.
+  Assemble_system_instationary took 0.455605 s.
+    prepare_bc_instationary took 0.022169 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.095871 s.
+  timestep volume calculation took 0.006058 s.
+  Visualization took 0.103169 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 5 is: 0.384619630564.
+The RMSE in Step 5 is: 0.00419383355889.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 5 for ActionNumber 0 is: 0.00419383355889.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 5 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 5):
+ ===> [0.00419383355889,0.0,0.0,0.0,0.0]. 
+
+
+Going to update component 1 (= action-number) of the Q-value-vector in Step 5.
+
+The outfilenamestring for Action 1 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction1.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction1.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 164 iterations.
+      Residual norm for solution = 9.11827e-09
+
+  Global mesh volume of current timestep 1 : 9.69686
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 171 iterations.
+      Residual norm for solution = 8.31341e-09
+
+  Global mesh volume of current timestep 2 : 9.76522
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 172 iterations.
+      Residual norm for solution = 8.83785e-09
+
+  Global mesh volume of current timestep 3 : 9.87336
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 171 iterations.
+      Residual norm for solution = 9.23899e-09
+
+  Global mesh volume of current timestep 4 : 10.0216
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 7.66364e-09
+
+  Global mesh volume of current timestep 5 : 10.3126
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 172 iterations.
+      Residual norm for solution = 8.63159e-09
+
+  Global mesh volume of current timestep 6 : 10.5837
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 172 iterations.
+      Residual norm for solution = 7.60523e-09
+
+  Global mesh volume of current timestep 7 : 10.9242
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 9.7364e-09
+
+  Global mesh volume of current timestep 8 : 11.2944
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 8.36804e-09
+
+  Global mesh volume of current timestep 9 : 11.6161
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 171 iterations.
+      Residual norm for solution = 8.67704e-09
+
+  Global mesh volume of current timestep 10 : 11.9477
+
+
++++ Timing Report +++
+
+Setup took 0.378123 s.
+  setup_linear_algebra took 1.2e-05 s.
+  read_mesh took 0.264123 s.
+  prepare took 0.112373 s.
+  initial volume calculation took 0.001552 s.
+Complete_instationary_simulation_loop took 6.17036 s.
+  Visualization took 0.09886 s.
+  Assemble_system_instationary took 0.501007 s.
+    prepare_bc_instationary took 0.054481 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.034955 s.
+  Solve_system_instationary took 0.099977 s.
+  timestep volume calculation took 0.00577 s.
+  Assemble_system_instationary took 0.463514 s.
+    prepare_bc_instationary took 0.028657 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.097474 s.
+  timestep volume calculation took 0.006014 s.
+  Assemble_system_instationary took 0.461961 s.
+    prepare_bc_instationary took 0.020785 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.6e-05 s.
+  Solve_system_instationary took 0.094754 s.
+  timestep volume calculation took 0.00613 s.
+  Assemble_system_instationary took 0.502874 s.
+    prepare_bc_instationary took 0.020943 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.099864 s.
+  timestep volume calculation took 0.006119 s.
+  Assemble_system_instationary took 0.492435 s.
+    prepare_bc_instationary took 0.021275 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.120914 s.
+  timestep volume calculation took 0.006164 s.
+  Visualization took 0.106219 s.
+  Assemble_system_instationary took 0.489519 s.
+    prepare_bc_instationary took 0.019676 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.110005 s.
+  timestep volume calculation took 0.006186 s.
+  Assemble_system_instationary took 0.472561 s.
+    prepare_bc_instationary took 0.023156 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.095803 s.
+  timestep volume calculation took 0.00613 s.
+  Assemble_system_instationary took 0.477471 s.
+    prepare_bc_instationary took 0.020825 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.2e-05 s.
+  Solve_system_instationary took 0.095447 s.
+  timestep volume calculation took 0.006058 s.
+  Assemble_system_instationary took 0.47273 s.
+    prepare_bc_instationary took 0.020595 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.097614 s.
+  timestep volume calculation took 0.006101 s.
+  Assemble_system_instationary took 0.457569 s.
+    prepare_bc_instationary took 0.020776 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.6e-05 s.
+  Solve_system_instationary took 0.094335 s.
+  timestep volume calculation took 0.006441 s.
+  Visualization took 0.105757 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 5 is: 0.511843280932.
+The RMSE in Step 5 is: 0.00483797890841.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 5 for ActionNumber 1 is: 0.00483797890841.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 5 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 5):
+ ===> [0.00419383355889,0.00483797890841,0.0,0.0,0.0]. 
+
+
+Going to update component 2 (= action-number) of the Q-value-vector in Step 5.
+
+The outfilenamestring for Action 2 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction2.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction2.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 161 iterations.
+      Residual norm for solution = 9.39308e-09
+
+  Global mesh volume of current timestep 1 : 9.69796
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.30482e-09
+
+  Global mesh volume of current timestep 2 : 9.76666
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.03975e-09
+
+  Global mesh volume of current timestep 3 : 9.87629
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 7.47816e-09
+
+  Global mesh volume of current timestep 4 : 10.0249
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 6.39209e-09
+
+  Global mesh volume of current timestep 5 : 10.3178
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.41835e-09
+
+  Global mesh volume of current timestep 6 : 10.5923
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.3255e-09
+
+  Global mesh volume of current timestep 7 : 10.9351
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 8.39521e-09
+
+  Global mesh volume of current timestep 8 : 11.3111
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 167 iterations.
+      Residual norm for solution = 9.16479e-09
+
+  Global mesh volume of current timestep 9 : 11.6379
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 6.94114e-09
+
+  Global mesh volume of current timestep 10 : 11.9781
+
+
++++ Timing Report +++
+
+Setup took 0.389831 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.27168 s.
+  prepare took 0.115646 s.
+  initial volume calculation took 0.00233 s.
+Complete_instationary_simulation_loop took 6.12689 s.
+  Visualization took 0.101377 s.
+  Assemble_system_instationary took 0.515138 s.
+    prepare_bc_instationary took 0.056963 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.036565 s.
+  Solve_system_instationary took 0.113577 s.
+  timestep volume calculation took 0.005818 s.
+  Assemble_system_instationary took 0.471799 s.
+    prepare_bc_instationary took 0.021608 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.8e-05 s.
+  Solve_system_instationary took 0.092473 s.
+  timestep volume calculation took 0.005898 s.
+  Assemble_system_instationary took 0.470304 s.
+    prepare_bc_instationary took 0.021334 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.7e-05 s.
+  Solve_system_instationary took 0.09345 s.
+  timestep volume calculation took 0.006053 s.
+  Assemble_system_instationary took 0.468682 s.
+    prepare_bc_instationary took 0.021767 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.3e-05 s.
+  Solve_system_instationary took 0.101963 s.
+  timestep volume calculation took 0.006148 s.
+  Assemble_system_instationary took 0.477224 s.
+    prepare_bc_instationary took 0.021763 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.2e-05 s.
+  Solve_system_instationary took 0.094548 s.
+  timestep volume calculation took 0.006151 s.
+  Visualization took 0.106233 s.
+  Assemble_system_instationary took 0.491087 s.
+    prepare_bc_instationary took 0.023721 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.101548 s.
+  timestep volume calculation took 0.006074 s.
+  Assemble_system_instationary took 0.476693 s.
+    prepare_bc_instationary took 0.022324 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.9e-05 s.
+  Solve_system_instationary took 0.092947 s.
+  timestep volume calculation took 0.006062 s.
+  Assemble_system_instationary took 0.474721 s.
+    prepare_bc_instationary took 0.02143 s.
+      process_BCdataInputfile_into_BCdataStructure took 4.2e-05 s.
+  Solve_system_instationary took 0.092665 s.
+  timestep volume calculation took 0.005971 s.
+  Assemble_system_instationary took 0.466832 s.
+    prepare_bc_instationary took 0.020875 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.8e-05 s.
+  Solve_system_instationary took 0.100162 s.
+  timestep volume calculation took 0.006096 s.
+  Assemble_system_instationary took 0.466683 s.
+    prepare_bc_instationary took 0.022203 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.000114 s.
+  Solve_system_instationary took 0.093001 s.
+  timestep volume calculation took 0.006 s.
+  Visualization took 0.102779 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 5 is: 1.0000838285.
+The RMSE in Step 5 is: 0.00676259952644.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 5 for ActionNumber 2 is: 0.00676259952644.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 5 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 5):
+ ===> [0.00419383355889,0.00483797890841,0.00676259952644,0.0,0.0]. 
+
+
+Going to update component 3 (= action-number) of the Q-value-vector in Step 5.
+
+The outfilenamestring for Action 3 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction3.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction3.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 7.8691e-09
+
+  Global mesh volume of current timestep 1 : 9.69806
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 171 iterations.
+      Residual norm for solution = 9.82663e-09
+
+  Global mesh volume of current timestep 2 : 9.76624
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 175 iterations.
+      Residual norm for solution = 6.78435e-09
+
+  Global mesh volume of current timestep 3 : 9.87398
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 8.35273e-09
+
+  Global mesh volume of current timestep 4 : 10.0236
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.0804e-09
+
+  Global mesh volume of current timestep 5 : 10.3093
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 175 iterations.
+      Residual norm for solution = 8.24385e-09
+
+  Global mesh volume of current timestep 6 : 10.5708
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 175 iterations.
+      Residual norm for solution = 7.80949e-09
+
+  Global mesh volume of current timestep 7 : 10.9022
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 7.9809e-09
+
+  Global mesh volume of current timestep 8 : 11.2535
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 170 iterations.
+      Residual norm for solution = 9.24202e-09
+
+  Global mesh volume of current timestep 9 : 11.5542
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 171 iterations.
+      Residual norm for solution = 9.33772e-09
+
+  Global mesh volume of current timestep 10 : 11.8492
+
+
++++ Timing Report +++
+
+Setup took 0.394995 s.
+  setup_linear_algebra took 1e-05 s.
+  read_mesh took 0.27025 s.
+  prepare took 0.1209 s.
+  initial volume calculation took 0.003787 s.
+Complete_instationary_simulation_loop took 6.3173 s.
+  Visualization took 0.107229 s.
+  Assemble_system_instationary took 0.526084 s.
+    prepare_bc_instationary took 0.061892 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.041249 s.
+  Solve_system_instationary took 0.119656 s.
+  timestep volume calculation took 0.005821 s.
+  Assemble_system_instationary took 0.471927 s.
+    prepare_bc_instationary took 0.021618 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.094922 s.
+  timestep volume calculation took 0.00615 s.
+  Assemble_system_instationary took 0.477079 s.
+    prepare_bc_instationary took 0.022921 s.
+      process_BCdataInputfile_into_BCdataStructure took 5e-05 s.
+  Solve_system_instationary took 0.100871 s.
+  timestep volume calculation took 0.006882 s.
+  Assemble_system_instationary took 0.471662 s.
+    prepare_bc_instationary took 0.021457 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.4e-05 s.
+  Solve_system_instationary took 0.097412 s.
+  timestep volume calculation took 0.006065 s.
+  Assemble_system_instationary took 0.48153 s.
+    prepare_bc_instationary took 0.02186 s.
+      process_BCdataInputfile_into_BCdataStructure took 3.2e-05 s.
+  Solve_system_instationary took 0.094047 s.
+  timestep volume calculation took 0.006077 s.
+  Visualization took 0.108578 s.
+  Assemble_system_instationary took 0.476374 s.
+    prepare_bc_instationary took 0.020248 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.3e-05 s.
+  Solve_system_instationary took 0.098601 s.
+  timestep volume calculation took 0.006177 s.
+  Assemble_system_instationary took 0.487938 s.
+    prepare_bc_instationary took 0.025693 s.
+      process_BCdataInputfile_into_BCdataStructure took 7.6e-05 s.
+  Solve_system_instationary took 0.098982 s.
+  timestep volume calculation took 0.006157 s.
+  Assemble_system_instationary took 0.480186 s.
+    prepare_bc_instationary took 0.024258 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.8e-05 s.
+  Solve_system_instationary took 0.094257 s.
+  timestep volume calculation took 0.006094 s.
+  Assemble_system_instationary took 0.535226 s.
+    prepare_bc_instationary took 0.021529 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.4e-05 s.
+  Solve_system_instationary took 0.108709 s.
+  timestep volume calculation took 0.006485 s.
+  Assemble_system_instationary took 0.519871 s.
+    prepare_bc_instationary took 0.024203 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.000129 s.
+  Solve_system_instationary took 0.096616 s.
+  timestep volume calculation took 0.0061 s.
+  Visualization took 0.106685 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 5 is: 40.6278775404.
+The RMSE in Step 5 is: 0.0431030036065.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 5 for ActionNumber 3 is: 0.0431030036065.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 5 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 5):
+ ===> [0.00419383355889,0.00483797890841,0.00676259952644,0.0431030036065,0.0]. 
+
+
+Going to update component 4 (= action-number) of the Q-value-vector in Step 5.
+
+The outfilenamestring for Action 4 is: elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction4.xml.
+
+=========================
+SimulationRunner started. 
+
+Starting Execution of HiFlow3 Elasticity App in sequential mode: ./elasticity elastScen_Beam_RLalgo_TestInput_SIMDATA_TestAction4.xml
+
+=========================================================
+==== Elasticity Simulation                            ===
+====       built using HiFlow3.                       ===
+====                                                  ===
+==== Engineering Mathematics and Computing Lab (EMCL) ===
+=========================================================
+
+Could not read Unknown CellData type "Materials"	... skipping.
+  Read mesh with 5467 cells.
+  Refined mesh (level 0) has 5467 cells.
+  Total number of dofs = 3900
+    Num dofs on process 0 = 3900
+
+  Initial global mesh volume: 9.66737
+
+Starting simulation using the Newmark time integration scheme.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read for simulation in initial step.
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 162 iterations.
+      Residual norm for solution = 9.39958e-09
+
+  Global mesh volume of current timestep 1 : 9.69669
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 7.82363e-09
+
+  Global mesh volume of current timestep 2 : 9.76555
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 9.49581e-09
+
+  Global mesh volume of current timestep 3 : 9.87575
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.60984e-09
+
+  Global mesh volume of current timestep 4 : 10.0226
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 165 iterations.
+      Residual norm for solution = 8.90298e-09
+
+  Global mesh volume of current timestep 5 : 10.3206
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 6.74439e-09
+
+  Global mesh volume of current timestep 6 : 10.6058
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.48997e-09
+
+  Global mesh volume of current timestep 7 : 10.958
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 8.21814e-09
+
+  Global mesh volume of current timestep 8 : 11.3541
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 168 iterations.
+      Residual norm for solution = 7.27254e-09
+
+  Global mesh volume of current timestep 9 : 11.7022
+
+ControlOutput: Pointwise DirichletBC parts of BCdata: successfully read and processed for simulation.
+ControlOutput: Pointwise NeumannBC parts of BCdata: not yet implemented.
+      Linear solver (CG) using the SymmetricGaussSeidel preconditioner.
+      Linear solver (CG) computed solution in 169 iterations.
+      Residual norm for solution = 9.19982e-09
+
+  Global mesh volume of current timestep 10 : 12.0804
+
+
++++ Timing Report +++
+
+Setup took 0.382794 s.
+  setup_linear_algebra took 9e-06 s.
+  read_mesh took 0.269279 s.
+  prepare took 0.111945 s.
+  initial volume calculation took 0.001495 s.
+Complete_instationary_simulation_loop took 6.49646 s.
+  Visualization took 0.099987 s.
+  Assemble_system_instationary took 0.52271 s.
+    prepare_bc_instationary took 0.054335 s.
+      process_BCdataInputfile_into_BCdataStructure took 0.034865 s.
+  Solve_system_instationary took 0.104833 s.
+  timestep volume calculation took 0.005978 s.
+  Assemble_system_instationary took 0.472558 s.
+    prepare_bc_instationary took 0.020114 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.1e-05 s.
+  Solve_system_instationary took 0.096356 s.
+  timestep volume calculation took 0.005898 s.
+  Assemble_system_instationary took 0.471249 s.
+    prepare_bc_instationary took 0.020513 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.2e-05 s.
+  Solve_system_instationary took 0.093196 s.
+  timestep volume calculation took 0.006033 s.
+  Assemble_system_instationary took 0.47584 s.
+    prepare_bc_instationary took 0.020564 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.093363 s.
+  timestep volume calculation took 0.006203 s.
+  Assemble_system_instationary took 0.479242 s.
+    prepare_bc_instationary took 0.02218 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.5e-05 s.
+  Solve_system_instationary took 0.094463 s.
+  timestep volume calculation took 0.006061 s.
+  Visualization took 0.31178 s.
+  Assemble_system_instationary took 0.542245 s.
+    prepare_bc_instationary took 0.019273 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.09659 s.
+  timestep volume calculation took 0.006013 s.
+  Assemble_system_instationary took 0.485826 s.
+    prepare_bc_instationary took 0.02072 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.4e-05 s.
+  Solve_system_instationary took 0.099872 s.
+  timestep volume calculation took 0.00834 s.
+  Assemble_system_instationary took 0.504114 s.
+    prepare_bc_instationary took 0.02188 s.
+      process_BCdataInputfile_into_BCdataStructure took 9.1e-05 s.
+  Solve_system_instationary took 0.099209 s.
+  timestep volume calculation took 0.006045 s.
+  Assemble_system_instationary took 0.5143 s.
+    prepare_bc_instationary took 0.023942 s.
+      process_BCdataInputfile_into_BCdataStructure took 1.4e-05 s.
+  Solve_system_instationary took 0.095986 s.
+  timestep volume calculation took 0.006092 s.
+  Assemble_system_instationary took 0.480417 s.
+    prepare_bc_instationary took 0.021428 s.
+      process_BCdataInputfile_into_BCdataStructure took 2.6e-05 s.
+  Solve_system_instationary took 0.093707 s.
+  timestep volume calculation took 0.006087 s.
+  Visualization took 0.105226 s.
+
++++ End Timing Report +++
+
+============================================================
+
+SimulationRunner successfully finished.
+
+
+SimulationRunner successfully finished.
+======================================= 
+
+==========================
+Pvtu2vtuConverter started. 
+
+The following file list will be iterated over and processed by the pvtu2vtu converter:
+['RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000.pvtu', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010.pvtu']
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0005_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0000_outVis.vtu')
+('current outputfilename: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+All files successfully processed.
+Pvtu2vtuConverter successfully finished.
+
+
+Pvtu2vtuConverter successfully finished.
+======================================== 
+
+=====================================
+SimResultsComparisonOperator started. 
+
+('Control Output: Path to real data:      ', 'RL_TestSimResults/Beam_REALDATA_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: Path to simulated data: ', 'RL_TestSimResults/TestRL_Beam_solution_np1_RefLvl0_Tstep.0010_outVis.vtu')
+('Control Output: nodes_numpy_array_simdata.shape = ', (21868, 3))
+('Control Output: num_points = nodes_numpy_array_realdata.size/3 = ', 21868)
+The error_scaler in Step 5 is: 49.1890927964.
+The RMSE in Step 5 is: 0.0474274608071.
+SimResultsComparisonOperator successfully finished.
+
+
+The RMSE value in Step 5 for ActionNumber 4 is: 0.0474274608071.
+
+
+RMSEvalueComputeScript successfully finished.
+============================================= 
+
+ActionSpace for Step 5 further simulated/computed, i.e., Q-value vector further updated.
+Q-value Vector (in Step 5):
+ ===> [0.00419383355889,0.00483797890841,0.00676259952644,0.0431030036065,0.0474274608071]. 
+
+
+ActionSpace for Step 5 entirely computed/simulated, i.e., Q-value vector fully updated.
+
+The Q-value Vector has been analyzed, and the best Action was found to be: action_number = 0. 
+
+The (locally) best solution, i.e., the best parameter combination for the given first-guess-initialization, has been found. PROGRAM FINISHED. 
+
+Please note: It may be reasonable to re-initialize the program with another first guess in order to obtain another (possibly better) local solution. 
+
+
+QvalueComputeScript successfully finished in Step 5.
+
+
+The current steps best ActionNumber is 0.
+
+
+QvalueComputeScript successfully finished.
+========================================== 
+
+
+
+RLalgo_GeneralRunScript FINISHED. 
+
+nschoch@Nico-Schoch-ThinkPad-X250:~/Workspace/HiFlow3/applications/ESim_Corot$ 
+
+
